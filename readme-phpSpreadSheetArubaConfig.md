@@ -67,7 +67,7 @@ $this->uploadExcelManager->readData(UploadedFile $file, ?User $user, array $opti
 
 
 
-Por ultimo retorna un arreglo con la data segun con las cabeceras que haya hecho match, el resumen y un objeto upload:
+Por ultimo retorna un arreglo de arreglos  con la data segun con las cabeceras que haya hecho matchm y podemos obtener en base el resume y el upload file:
 
   [
   0 => [
@@ -76,10 +76,11 @@ Por ultimo retorna un arreglo con la data segun con las cabeceras que haya hecho
     "validFrom" => null
     "validTo" => null
   ]
-  'upload' => Object
-  'resume' => array
   
  ]
+ 
+ getResume();
+ getUploadedFile();
  ....
 
 
