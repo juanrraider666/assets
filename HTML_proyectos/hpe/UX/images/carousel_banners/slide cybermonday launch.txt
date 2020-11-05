@@ -1,0 +1,30 @@
+<li style="background-color:rgba(0,0,0,1.00); background-image: url(../img/carousel_banners/slide4_launch.jpg); background-repeat: no-repeat;">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12 no_pad">
+                            <div class="overlay_slide " style="background-color: rgba(0,0,0,0.5)"></div>
+                            <img src="../img/carousel_banners/" class="img-responsive main_slide_img" alt="Adobe" />
+                            <div class="pa text-left w100 h100" style="top:0; padding: 0 35px;">
+                                <div class="t_table h100" style="max-width: 520px">
+
+                                    <div class="t_cell va_m">
+                                        <div class="s38 white_txt light_txt" style="max-width: 400px">Aproveche nuestra promoción de </div>
+                                        <span class="bold_txt cyber_txt" style="color:rgba(66,186,225,1.00);"> Cyber Monday</span>
+                                        <style>
+                                            .cyber_txt{ font-size: 116px; line-height: 83px; text-transform: uppercase; text-shadow: -1px 1px 21px rgba(66, 186, 225, 1);}
+                                            @media (max-width: 768px) {
+                                                .cyber_txt{font-size: 68px; line-height: 53px;}
+                                            }
+                                        </style>
+                                        <div class="light_txt s20 white_txt m_t15" style="max-width:462px; ">Canjee sus <span class="bold_txt">DigiPoints</span> por cualquier tarjeta Visa con nuestro descuento, <span class="bold_txt">válido sólo por hoy</span> </div>
+										
+										<a href="#" class="btn btn_red m_b50 i_block m_t20"> Canjee Ahora</a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </li>

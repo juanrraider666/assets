@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap - Prebuilt Layout</title>
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+	
+		<style>
+	
+	body {
+  margin: 50px 0;
+}
+
+			.carousel.vertical{ display: inline-block; font-family: 'Open Sans'}	
+			.ticker-headline a {display: inline-table;  background-color: #28333b; color: white; text-decoration: none; /*width: 220px*/}
+			
+			
+			
+			.ticker-headline a > span{ display:table-cell;  vertical-align: middle; text-align: center; white-space: normal; padding:10px 8px; font-size: 12px; font-weight: 300; text-transform: uppercase;  }
+			
+			.ticker-headline a > span:last-child{ background-color: #ff6b00; font-family: 'Open Sans'; font-size: 30px; font-weight: 400; width: 140px; }
+			
+			.ticker-headline a > span:first-child{ width: 125px }
+			
+			
+			
+.ticker-headline {
+  overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.carousel.vertical .carousel-inner {
+  height: 100%;
+  width: auto;
+}
+.carousel.vertical .carousel-inner > .item {
+  width: auto;
+  padding-right: 28px;
+  -webkit-transition: 0.6s ease-in-out top;
+  transition: 0.6s ease-in-out top;
+}
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .carousel.vertical .carousel-inner > .item {
+    -webkit-transition: 0.6s ease-in-out;
+    transition: 0.6s ease-in-out;
+  }
+  .carousel.vertical .carousel-inner > .item.next, .carousel.vertical .carousel-inner > .item.active.right {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+    top: 0;
+  }
+  .carousel.vertical .carousel-inner > .item.prev, .carousel.vertical .carousel-inner > .item.active.left {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+    top: 0;
+  }
+  .carousel.vertical .carousel-inner > .item.next.left, .carousel.vertical .carousel-inner > .item.prev.right, .carousel.vertical .carousel-inner > .item.active {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    top: 0;
+  }
+}
+.carousel.vertical .carousel-inner > .active,
+.carousel.vertical .carousel-inner > .next,
+.carousel.vertical .carousel-inner > .prev {
+  display: block;
+}
+.carousel.vertical .carousel-inner > .active {
+  top: 0;
+}
+.carousel.vertical .carousel-inner > .next,
+.carousel.vertical .carousel-inner > .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.carousel.vertical .carousel-inner > .next {
+  top: 100%;
+}
+.carousel.vertical .carousel-inner > .prev {
+  top: -100%;
+}
+.carousel.vertical .carousel-inner > .next.left,
+.carousel.vertical .carousel-inner > .prev.right {
+  top: 0;
+}
+.carousel.vertical .carousel-inner > .active.left {
+  top: -100%;
+}
+.carousel.vertical .carousel-inner > .active.right {
+  top: 100%;
+}
+
+.carousel.vertical .carousel-control {
+  left: auto;
+  width: 28px; background-color:rgba(51,63,72,1.00); 
+	opacity: 0.8; transition: all 0.3s ease;
+}
+			
+			
+			.carousel.vertical .carousel-control:hover{opacity: 1}			
+			
+.carousel.vertical .carousel-control.up {
+  top: 0;
+  right: 0;
+  bottom: 50%;
+}
+.carousel.vertical .carousel-control.down {
+  top: 50%;
+  right: 0;
+  bottom: 0;
+}
+.carousel.vertical .carousel-control .icon-prev,
+.carousel.vertical .carousel-control .icon-next,
+.carousel.vertical .carousel-control .glyphicon-chevron-up,
+.carousel.vertical .carousel-control .glyphicon-chevron-down {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+}
+.carousel.vertical .carousel-control .icon-prev,
+.carousel.vertical .carousel-control .glyphicon-chevron-up {
+  left: 50%;
+  margin-left: -10px;
+  top: 50%;
+  margin-top: -10px;
+}
+.carousel.vertical .carousel-control .icon-next,
+.carousel.vertical .carousel-control .glyphicon-chevron-down {
+  left: 50%;
+  margin-left: -10px;
+  top: 50%;
+  margin-top: -10px;
+}
+.carousel.vertical .carousel-control .icon-up,
+.carousel.vertical .carousel-control .icon-down {
+  width: 20px;
+  height: 20px;
+  line-height: 1;
+  font-family: serif;
+}
+.carousel.vertical .carousel-control .icon-prev:before {
+  content: '';
+}
+.carousel.vertical .carousel-control .icon-next:before {
+  content: '';
+}
+			
+			.glyphicon-chevron-up:before, .glyphicon-chevron-down:before{content: ''; }
+
+			.up.carousel-control, .down.carousel-control{ background-image: url(img/white_arrow_carousel.png); background-position: center 8px; background-repeat: no-repeat; background-size: 20px }	
+			
+			.down.carousel-control{  background-position: center -18px;  }	
+	
+	
+	</style>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</head>
+<body>
+
+	
+	
+	
+	
+	<div class="">
+  <div class="container-fluid text-right">
+    <div id="balance_c__points" class="carousel vertical slide " data-interval="5000" data-ride="carousel">
+      <div class="carousel-inner " role="listbox">
+        <div class="item active">
+          <p class="ticker-headline">
+            <a href="#">
+              <span>Balance <br>
+Credito</span><span> US$215</span>
+            </a>
+          </p>
+        </div>
+        <div class="item ">
+          <p class="ticker-headline">
+            <a href="#">
+              <span>Mis Puntos</span><span>200.000</span>
+            </a>
+          </p>
+        </div>
+       
+      
+      </div>
+
+      <!-- Controls -->
+      <a class="up carousel-control" href="#balance_c__points" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="down carousel-control" href="#balance_c__points" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.3.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

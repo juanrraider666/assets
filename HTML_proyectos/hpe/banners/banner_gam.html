@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HPE | PBM/DBM</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+
+<link href="css/bi_report.css" rel="stylesheet">    
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body >
+
+<div class="container-fluid hpe_container_fluid">
+    
+    
+    
+    <div class="row">
+    
+    
+    
+        
+        <div class="gam_banner">
+            
+            
+            <div class="col-sm-12">
+                
+            <div>
+            
+                <div class="col-md-offset-1 col-md-10">Stay tuned and come back to this page soon!
+                
+                <div class="sub_gam">The NEW Gamification will arrive soon</div>
+                
+                </div>
+            
+            </div>
+        
+    
+
+        
+        
+        
+        </div>
+        
+       
+        
+        </div>
+        
+        
+        
+        
+    
+    
+    </div>
+    
+    
+    
+    
+    <ul class="nav nav-tabs hpe_tabs">
+    <li class="active"><a  href="">General</a></li>
+    <li><a  href="pbm.html">PBM</a></li>
+    <li><a  href="dbm.html">DBM</a></li>
+  </ul>
+
+
+ 
+  <div class="row">
+      <form>
+          
+       <div class="col-xs-12 text-right nopadding">
+      
+      <div class="m_l5">
+        	
+          
+          <button type="reset" value="Borrar" class="btn btn-tertiary m_b15">Clear</button>
+        		
+        		<a type="button" class="btn btn-out-green m_b15 m_l5" id="btn_search"><div>Search</div></a>
+          
+                <a type="button" class="btn btn-green m_b15 m_l5" data-toggle="modal" data-target="#download_pbd_dbm"><div>Download</div></a>
+          
+              
+          
+          
+        		</div>
+      
+      </div>      
+          
+    <div class="col-xs-12 nopadding ">
+      
+        <div class="row special-15 ">
+            
+            
+            
+         
+            
+            
+            <div class="col-xs-15 ">
+            
+          <div class="hpe_filter">
+                
+                <div class="open_filter">Region</div>
+              <div class="s14">All</div>
+              
+              
+              <div class="content_checkboxes">
+                    
+                      <ul>
+                           <li class="t-task semi_b_txt" id=""><input type="checkbox" class="select_all" id="c1-0122" name="cc22"><label for="c1-0122"><span></span><span>Select All</span></label></li>
+                        <li class="t-task semi_b_txt">Region 1</li>
+                        <li class="check_wrap"><input type="checkbox" id="c1-01" name="cc"><label for="c1-01"><span></span><span>Country 1</span></label></li>
+                        <li class="check_wrap"><input type="checkbox" id="c1-02" name="cc"><label for="c1-02"><span></span><span>Country 2</span></label></li>
+                        <li class="semi_b_txt t-task">Region 2</li>
+                        <li class="check_wrap"><input type="checkbox" id="c1-022" name="cc"><label for="c1-022"><span></span><span>Country 1</span></label></li>
+                        <li class="check_wrap"><input type="checkbox" id="c1-023" name="cc"><label for="c1-023"><span></span><span>Country 2</span></label></li>
+                        <li class="check_wrap"><input type="checkbox" id="c1-024" name="cc"><label for="c1-024"><span></span><span>Country 3</span></label></li>
+                        <li class="check_wrap"><input type="checkbox" id="c1-025" name="cc"><label for="c1-025"><span></span><span>Country 4</span></label></li>
+                      </ul>
+
+                    </div>
+             
+              
+  </div>
+            
+            </div>
+             <div class="col-xs-15">
+            
+            
+            <div class="hpe_filter">
+                <div class="open_filter">Clasification</div>
+              <div class="s14">All</div>
+              <div class="content_checkboxes">
+                     <ul>
+                        <li class="t-task semi_b_txt">Class 1</li>
+                        <li class="check_wrap"><input type="checkbox" id="c1-03" name="cc"><label for="c1-03"><span></span><span>Options</span></label></li>
+                        <li class="check_wrap"><input type="checkbox" id="c1-04" name="cc"><label for="c1-04"><span></span><span>Networking</span></label></li>
+                        <li class="check_wrap"><input type="checkbox" id="c1-05" name="cc"><label for="c1-05"><span></span><span>Software</span></label></li>
+                        <li class="check_wrap"><input type="checkbox" id="c1-06" name="cc"><label for="c1-06"><span></span><span>Servers</span></label></li>
+                        <li class="check_wrap"><input type="checkbox" id="c1-07" name="cc"><label for="c1-07"><span></span><span>Tech. Services</span></label></li>
+                        
+                      </ul>
+
+                       <ul>
+                        <li class="semi_b_txt t-task">Class 2</li>
+                        <li class="check_wrap"><input type="checkbox" id="c1-013" name="cc"><label for="c1-013"><span></span><span>Live</span></label></li>
+                        <li class="check_wrap"><input type="checkbox" id="c1-014" name="cc"><label for="c1-014"><span></span><span>Expired</span></label></li>
+                         <li class="check_wrap"><input type="checkbox" id="c1-015" name="cc"><label for="c1-015"><span></span><span>Draft</span></label></li>
+                      </ul>
+                    </div>
+  </div>
+            
+            
+            </div>
+             <div class="col-xs-15">
+            
+                <div class="hpe_filter">
+                <div class="open_filter">Fiscal Year</div>
+              <div class="s14">All</div>
+              <div class="content_checkboxes">
+                     <ul>
+                      
+                        <li class="check_wrap"><input type="radio" id="c1-03a" name="cc"><label for="c1-03a"><span></span><span>2018</span></label></li>
+                        <li class="check_wrap"><input type="radio" id="c1-04a" name="cc"><label for="c1-04a"><span></span><span>2017</span></label></li>
+                        <li class="check_wrap"><input type="radio" id="c1-05a" name="cc"><label for="c1-05a"><span></span><span>2016</span></label></li>
+                       
+                      </ul>
+
+                     
+                    </div>
+  </div>
+            
+            </div>
+             <div class="col-xs-15">
+            
+                <div class="hpe_filter">
+                <div class="open_filter">PBM/DBM</div>
+              <div class="s14">All</div>
+              <div class="content_checkboxes">
+                     <ul>
+                      
+                        <li class="check_wrap"><input type="checkbox" id="c1-03b" name="cc"><label for="c1-03b"><span></span><span>PBM</span></label></li>
+                        <li class="check_wrap"><input type="checkbox" id="c1-04b" name="cc"><label for="c1-04b"><span></span><span>DBM</span></label></li>
+                       
+                      </ul>
+
+                     
+                    </div>
+  </div>
+            
+            </div>
+             <div class="col-xs-15 ">
+      
+        <div class="hpe_filter">
+                
+                <div class="open_filter">Company</div>
+              <div class="s14">All</div>
+              
+              
+              <div class="content_checkboxes">
+                    
+                      <ul>
+                      
+                        <li class="check_wrap"><input type="checkbox" id="c1-01r" name="cc"><label for="c1-01r"><span></span><span>Company  1</span></label></li>
+                        <li class="check_wrap"><input type="checkbox" id="c1-02r" name="cc"><label for="c1-02r"><span></span><span>Company 2</span></label></li>
+                        
+                      
+                      </ul>
+
+                    </div>
+             
+              
+  </div>
+      
+      </div>
+        </div>
+      
+      
+      </div>
+      
+   
+   
+    </form>
+  </div>
+    </div>
+    
+    <div class="container-fluid hpe_container_fluid">
+  
+  <div class="row">
+       <div class="graph_title_box">Areas</div>
+    <div class="col-xs-12 graph_group_box">
+        
+      
+            
+            
+            
+            <div class="row">
+            <div class="col-xs-3">
+                
+                <div class="graph_box">
+                    
+                    <div class="black_txt s24 text-center regular_txt m_t20">Sales Out</div>
+                <div class="pr">
+                     <div class="number_graph">
+                        <div>
+                            <div>99%
+                             <div class="s14 regular_txt">Participating</div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div id="ob_1" class="chart">
+                   
+                    </div></div>
+                </div>
+                
+                
+                </div>
+             <div class="col-xs-3">
+                
+                 <div class="graph_box">
+                    
+                    <div class="black_txt s24 text-center regular_txt m_t20">iQuote</div>
+                <div class="pr">
+                     <div class="number_graph">
+                        <div>
+                            <div>79%
+                             <div class="s14 regular_txt">Participating</div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div id="ob_2" class="chart">
+                   
+                    </div></div>
+                </div>
+                
+                
+                
+                </div>
+             <div class="col-xs-3">
+                
+                 <div class="graph_box">
+                    
+                    <div class="black_txt s24 text-center regular_txt m_t20">Engage&amp;Grow</div>
+                <div class="pr">
+                     <div class="number_graph">
+                        <div>
+                            <div>37%
+                             <div class="s14 regular_txt">Participating</div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div id="ob_3" class="chart">
+                   
+                    </div></div>
+                </div>
+                
+                </div>
+             <div class="col-xs-3">
+                
+                <div class="graph_box">
+                    
+                    <div class="black_txt s24 text-center regular_txt m_t20">Just Right IT</div>
+                <div class="pr">
+                     <div class="number_graph">
+                        <div>
+                            <div>97%
+                             <div class="s14 regular_txt">Participating</div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div id="ob_4" class="chart">
+                   
+                    </div></div>
+                </div>
+                
+                </div>    
+            
+            </div>
+            
+        
+      
+     
+    </div>
+  </div>
+        
+    </div>
+    
+    
+    
+    
+    <div class="container-fluid hpe_container_fluid">
+  
+  <div class="row">
+       <div class="graph_title_box">Business Units Divisions</div>
+    <div class="col-xs-12 graph_group_box">
+            <div class="row">
+            <div class="col-xs-6">
+                
+                <div class="row>">
+                    
+                    <div class="col-xs-12">
+                          <div class="black_txt s24 regular_txt m_t20">Sales Out</div>
+                        <div class="black_txt s18 semi_b_txt m_t20">Sales Out Revenue Distribution</div>
+                        
+                       
+                        
+                         <ul class="legend_comobo_bar">
+                     <li><span><i class="bg_turquoise"></i></span><span>Hybrid IT</span></li>
+                            <li><span><i class="bg_orage"></i></span><span>Pointnext</span></li>
+                            <li><span><i class="bg_slate"></i></span><span>Aruba</span></li>
+                           
+                           
+                </ul>
+                        
+                        
+                    </div>
+                    
+                    <div class="col-xs-12">
+                       <div class="graph_box">
+                    
+                   
+                <div class="pr">
+                  
+                    <div id="ob_5" class="chart">
+                    </div></div>
+                </div>
+                    </div>
+
+                </div>
+                </div>
+                
+                
+             <div class="col-xs-6">
+                <div class="row>">
+                    <div class="col-xs-12">
+                     <div class="black_txt s24 regular_txt m_t20">Engage&amp;Grow</div>
+                        
+                    <div class="black_txt s20 semi_b_txt m_t20">Engage&amp;Grow Points Distribution</div>    
+                        
+                        <ul class="legend_comobo_bar">
+                     <li><span><i class="bg_turquoise"></i></span><span>Hybrid IT</span></li>
+                            <li><span><i class="bg_orage"></i></span><span>Pointnext</span></li>
+                            <li><span><i class="bg_slate"></i></span><span>Aruba</span></li>
+                </ul>
+                    </div>
+                    <div class="col-xs-12">
+                       <div class="graph_box">
+                <div class="pr">
+                    <div id="ob_6" class="chart">
+                    </div></div>
+                </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+    </div>
+  </div>
+    </div>
+    
+    
+    <div class="container-fluid hpe_container_fluid m_b30">
+        <div class="row">
+          <div class="graph_title_box">
+            <div class="col-xs-6 nopadding">Companies List</div>
+              <div class="col-xs-6">
+                      <div class="row">
+                      <div class="col-xs-6 text-center vcenter">
+                          <div class="pagination">
+  <a href="#" class="pager p_prev"></a>
+  <a >Pagina 1 de 6</a>
+  <a href="#" class="pager p_next"></a>
+</div>
+                          </div><!--
+--><div class="col-xs-6 text-right vcenter">
+                          
+                          <div class="s16">1759 Companies in Search</div>
+                          </div>
+                  </div>
+              </div>
+          </div>
+            
+            
+            
+            <div class="table-responsive">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table_hpe table-striped">
+    <thead>
+        <tr>
+            <th >Region</th>
+            <th width="14%">Country</th>
+            <th >Classification</th>
+            <th width="16%">PBM/DBM</th>
+            <th width="26%">Company Name</th>
+            <th class="text-center" >Sales Out</th>
+            <th class="text-center">EG</th>
+            <th class="text-center">iQUOTE</th>
+            <th class="text-center">JRIT</th>
+        </tr>
+        </thead>    
+  <tbody>
+    <tr>
+      <td>Argentina HQ</td>
+      <td>Uruguay</td>
+      <td>Growth Channel</td>
+      <td>Fanny Roa</td>
+      <td>Abacus SA</td>
+      <td class="text-center">
+        <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+    </tr>
+   <tr>
+      <td>Argentina HQ</td>
+      <td>Uruguay</td>
+      <td>Growth Channel</td>
+      <td>Fanny Roa</td>
+      <td>Abacus SA</td>
+      <td class="text-center">
+        <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+    </tr>
+    <tr>
+      <td>Argentina HQ</td>
+      <td>Uruguay</td>
+      <td>Growth Channel</td>
+      <td>Fanny Roa</td>
+      <td>Abacus SA</td>
+      <td class="text-center">
+        <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+    </tr>
+    <tr>
+      <td>Argentina HQ</td>
+      <td>Uruguay</td>
+      <td>Growth Channel</td>
+      <td>Fanny Roa</td>
+      <td>Abacus SA</td>
+      <td class="text-center">
+        <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/reject_table.png"  alt="reject"/></td>
+      <td class="text-center"> <img src="images/reject_table.png"  alt="reject"/></td>
+      <td class="text-center"> <img src="images/reject_table.png"  alt="reject"/></td>
+    </tr>
+    <tr>
+      <td>Argentina HQ</td>
+      <td>Uruguay</td>
+      <td>Growth Channel</td>
+      <td>Fanny Roa</td>
+      <td>Abacus SA</td>
+      <td class="text-center">
+        <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/reject_table.png"  alt="reject"/></td>
+      <td class="text-center"> <img src="images/reject_table.png"  alt="reject"/></td>
+      <td class="text-center"> <img src="images/reject_table.png"  alt="reject"/></td>
+    </tr>
+    <tr>
+      <td>Argentina HQ</td>
+      <td>Uruguay</td>
+      <td>Growth Channel</td>
+      <td>Fanny Roa</td>
+      <td>Abacus SA</td>
+      <td class="text-center">
+        <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+    </tr>
+    <tr>
+      <td>Argentina HQ</td>
+      <td>Uruguay</td>
+      <td>Growth Channel</td>
+      <td>Fanny Roa</td>
+      <td>Abacus SA</td>
+      <td class="text-center">
+        <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/reject_table.png"  alt="reject"/></td>
+      <td class="text-center"> <img src="images/reject_table.png"  alt="reject"/></td>
+      <td class="text-center"> <img src="images/reject_table.png"  alt="reject"/></td>
+    </tr>
+     <tr>
+      <td>Argentina HQ</td>
+      <td>Uruguay</td>
+      <td>Growth Channel</td>
+      <td>Fanny Roa</td>
+      <td>Abacus SA</td>
+      <td class="text-center">
+        <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/reject_table.png"  alt="reject"/></td>
+      <td class="text-center"> <img src="images/reject_table.png"  alt="reject"/></td>
+      <td class="text-center"> <img src="images/reject_table.png"  alt="reject"/></td>
+    </tr>
+    <tr>
+      <td>Argentina HQ</td>
+      <td>Uruguay</td>
+      <td>Growth Channel</td>
+      <td>Fanny Roa</td>
+      <td>Abacus SA</td>
+      <td class="text-center">
+        <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/reject_table.png"  alt="reject"/></td>
+      <td class="text-center"> <img src="images/reject_table.png"  alt="reject"/></td>
+      <td class="text-center"> <img src="images/reject_table.png"  alt="reject"/></td>
+    </tr>
+     <tr>
+      <td>Argentina HQ</td>
+      <td>Uruguay</td>
+      <td>Growth Channel</td>
+      <td>Fanny Roa</td>
+      <td>Abacus SA</td>
+      <td class="text-center">
+        <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+    </tr>
+   <tr>
+      <td>Argentina HQ</td>
+      <td>Uruguay</td>
+      <td>Growth Channel</td>
+      <td>Fanny Roa</td>
+      <td>Abacus SA</td>
+      <td class="text-center">
+        <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+    </tr>
+    <tr>
+      <td>Argentina HQ</td>
+      <td>Uruguay</td>
+      <td>Growth Channel</td>
+      <td>Fanny Roa</td>
+      <td>Abacus SA</td>
+      <td class="text-center">
+        <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+    </tr>
+    <tr>
+      <td>Argentina HQ</td>
+      <td>Uruguay</td>
+      <td>Growth Channel</td>
+      <td>Fanny Roa</td>
+      <td>Abacus SA</td>
+      <td class="text-center">
+        <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+    </tr>
+    <tr>
+      <td>Argentina HQ</td>
+      <td>Uruguay</td>
+      <td>Growth Channel</td>
+      <td>Fanny Roa</td>
+      <td>Abacus SA</td>
+      <td class="text-center">
+        <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+    </tr>
+    <tr>
+      <td>Argentina HQ</td>
+      <td>Uruguay</td>
+      <td>Growth Channel</td>
+      <td>Fanny Roa</td>
+      <td>Abacus SA</td>
+      <td class="text-center">
+        <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+    </tr>
+    <tr>
+      <td>Argentina HQ</td>
+      <td>Uruguay</td>
+      <td>Growth Channel</td>
+      <td>Fanny Roa</td>
+      <td>Abacus SA</td>
+      <td class="text-center">
+        <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+    </tr>
+    <tr>
+      <td>Argentina HQ</td>
+      <td>Uruguay</td>
+      <td>Growth Channel</td>
+      <td>Fanny Roa</td>
+      <td>Abacus SA</td>
+      <td class="text-center">
+        <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+    </tr>
+    <tr>
+      <td>Argentina HQ</td>
+      <td>Uruguay</td>
+      <td>Growth Channel</td>
+      <td>Fanny Roa</td>
+      <td>Abacus SA</td>
+      <td class="text-center">
+        <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+    </tr> <tr>
+      <td>Argentina HQ</td>
+      <td>Uruguay</td>
+      <td>Growth Channel</td>
+      <td>Fanny Roa</td>
+      <td>Abacus SA</td>
+      <td class="text-center">
+        <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+    </tr>
+   <tr>
+      <td>Argentina HQ</td>
+      <td>Uruguay</td>
+      <td>Growth Channel</td>
+      <td>Fanny Roa</td>
+      <td>Abacus SA</td>
+      <td class="text-center">
+        <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+    </tr>
+      <tr>
+      <td>Argentina HQ</td>
+      <td>Uruguay</td>
+      <td>Growth Channel</td>
+      <td>Fanny Roa</td>
+      <td>Abacus SA</td>
+      <td class="text-center">
+        <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+      <td class="text-center"> <img src="images/check_table.png"  alt="check"/></td>
+    </tr>
+   
+  </tbody>
+</table>
+            
+            
+            </div>
+        
+            
+        </div>
+    
+    
+    </div>
+    
+    
+  <!--modal download pbm dbm-->
+
+<!-- Modal -->
+<div id="download_pbd_dbm" class="modal fade modal-vcenter " role="dialog" >
+  <div class="modal-dialog modal-sm">
+
+    <!-- Modal content-->
+    <div class="modal-content modal_hpe">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title semi_b_txt s20 upper col-xs-12">Downloads</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+        	
+        	<div class="1 col-xs-12 ">
+        		
+       		  <div class="m_t20">
+        	
+                  
+                  <a href="" target="_blank" class="link_green_arrow s22 m_b10 d_block light_txt">PBM</a>
+                  
+                     <a href="" target="_blank" class="link_green_arrow s22 m_b10 d_block light_txt">DBM</a>
+                  
+                  
+        		</div>
+
+        	</div>
+        	
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- fin modal download pbm dbm --->      
+    
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.3.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> 
+    
+<script src="js/bi_report.js"></script>   
+<script src="js/general_view.js"></script>   
+  
+    
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Smooth Height Changes in Bootstrap Carousels</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+
+<!-- GENERIC BS EXAMPLE CODE, SLIGHTLY MODIFIED -->
+
+<div class="row">
+	<div class="col-sm-8 col-sm-offset-2">
+		<h1>Example Carousel Page</h1>
+		<p>Slides have variable heights. Transitions are smooth vertically as well horizontally. Bootstrap only provides for smooth transitions side-to-side. This custom script provides similar behavior up-and-down.</p>
+		<p>Accessibility in carousels is not great. This example page does not include all available accessibility features and exists only to demonstrate height change functionality. Users of this code should carefully consider accessibility needs and adapt the code appropriately.</p>
+	</div>
+</div>
+<!-- end .row -->
+
+
+<hr>
+
+
+<div class="row">
+
+	<div class="col-sm-8 col-sm-offset-2">
+
+		<h2>Carousel 1</h2>
+
+		<div id="carousel-example-generic-1" class="carousel slide" data-interval="false">
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<h3>Lorem ipsum dolor sit amet.</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ullam earum facere repellendus sequi voluptates obcaecati vel, ut fugiat, alias maiores? Facere suscipit, voluptates blanditiis.</p>
+					<p>Inventore eius quae quo ipsam illo voluptatum beatae, quas itaque, est at quam sed dolores nulla, quos vel ducimus enim minus id rerum dolore eaque.</p>
+					<p>A, nulla, id. Quia dolorem sint, enim maxime in, adipisci possimus quae voluptatem asperiores atque obcaecati eum quibusdam distinctio provident consequuntur illum voluptas. Quam, nisi.</p>
+				</div>
+				<div class="item">
+					<h3>Quia dolorem sint, enim maxime.</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt delectus rerum, asperiores alias perferendis. Eveniet debitis modi ipsum dolore, fugit architecto placeat dolorum soluta sunt.</p>
+					<p>Inventore, impedit fuga. Voluptatem repudiandae sapiente voluptatum maxime nulla, officia animi totam quis quod repellendus error nemo omnis expedita. Expedita recusandae vel aspernatur unde, placeat.</p>
+					<p>Blanditiis ratione sint quidem reprehenderit, placeat harum eos! Ullam dolores praesentium recusandae, odio suscipit deleniti aperiam sequi quaerat similique, nesciunt cumque incidunt, quis, dolore eos.</p>
+					<p>Cum maiores adipisci sed distinctio placeat aperiam laudantium repellendus dolorum excepturi. Porro, eius a! Necessitatibus eligendi mollitia ipsam exercitationem, nisi nemo magni maxime totam, cum!</p>
+					<p>Quia eaque, labore? Illum fugiat nihil doloremque hic facilis maiores rerum modi magnam eligendi omnis nemo voluptates, magni, harum unde eos at quas laudantium similique?</p>
+				</div>
+				<div class="item">
+					<h3>Voluptatem repudiandae sapiente.</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ex laboriosam vero magni repellendus, quasi alias in similique, dignissimos hic obcaecati a nesciunt quae sit.</p>
+				</div>
+			</div>
+			<div class="controls row">
+				<!-- Controls -->
+				<a class="left carousel-control" href="#carousel-example-generic-1" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic-1" data-slide-to="0" role="button" class="active"></li>
+					<li data-target="#carousel-example-generic-1" data-slide-to="1" role="button"></li>
+					<li data-target="#carousel-example-generic-1" data-slide-to="2" role="button"></li>
+				</ol>
+				<a class="right carousel-control" href="#carousel-example-generic-1" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+
+	</div>
+	<!-- end .col-sm-12 -->
+</div>
+<!-- end .row -->
+
+
+<hr>
+
+
+<div class="row">
+
+	<div class="col-sm-8 col-sm-offset-2">
+
+		<h2>Carousel 2</h2>
+
+		<div id="carousel-example-generic-2" class="carousel slide" data-interval="false">
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<h3>Reprehenderit, esse repudiandae.</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, esse repudiandae quae necessitatibus praesentium illum.</p>
+					<p>Recusandae porro ipsa, amet est possimus voluptatem facere ut totam dignissimos. Error, ducimus. Eum, iusto.</p>
+				</div>
+				<div class="item">
+					<h3>Corporis nihil voluptatibus.</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis nihil voluptatibus quas, aperiam eaque dolorem, impedit obcaecati error iure dignissimos, repudiandae numquam id. Quibusdam ipsa ratione, ea excepturi alias mollitia!</p>
+				</div>
+				<div class="item">
+					<h3>Accusantium exercitationem repellendus.</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro velit perspiciatis, necessitatibus quod voluptates soluta.</p>
+					<p>Ipsum, asperiores illum sed, quod delectus culpa quam, rem eum enim excepturi odit, adipisci esse.</p>
+					<p>Beatae quo quos ex cumque doloremque. Ipsa sed expedita nam unde quo, cumque explicabo adipisci?</p>
+					<p>Vitae delectus facilis, alias doloribus consequatur, blanditiis incidunt atque cumque eveniet debitis officiis consectetur laudantium.</p>
+					<p>Vero possimus eligendi, illo sunt labore temporibus neque id voluptatem, minus commodi laudantium, ipsa, doloremque.</p>
+					<p>Perferendis cumque nesciunt doloribus dicta labore dolore itaque sequi! Accusantium exercitationem repellendus officiis mollitia, enim.</p>
+					<p>Debitis corporis libero qui illo facilis. Quo eius facere quod velit est ut consectetur, vel?</p>
+					<p>Quaerat optio sapiente incidunt libero doloribus cum aliquid, blanditiis earum ea, molestias quidem. Consequatur, ducimus.</p>
+				</div>
+			</div>
+			<div class="controls row">
+				<!-- Controls -->
+				<a class="left carousel-control" href="#carousel-example-generic-2" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<!-- Indicators -->
+				<ol class="carousel-indicators" aria-label="Jump to Slide">
+					<li data-target="#carousel-example-generic-2" data-slide-to="0" tabindex="0" aria-label="slide 1" role="button" class="active"></li>
+					<li data-target="#carousel-example-generic-2" data-slide-to="1" tabindex="0" aria-label="slide 2" role="button"></li>
+					<li data-target="#carousel-example-generic-2" data-slide-to="2" tabindex="0" aria-label="slide 3" role="button"></li>
+				</ol>
+				<a class="right carousel-control" href="#carousel-example-generic-2" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+
+	</div>
+	<!-- end .col-sm-12 -->
+</div>
+<!-- end .row -->
+
+
+</div>
+<!-- end .container -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+	
+</body>
+</html>

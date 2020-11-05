@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Registration | Aruba Partner Connect</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+<link href="css/datepicker.css" rel="stylesheet">
+<link href="css/bootstrap-select.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+<section class="header_landing">
+  <div class="container-fluid">
+    <div class="row flex-row align-items-center">
+      <div class="col-sm-12 text-right py-1">
+        <ul class="list_header">
+          <li class="px-2"><a href="#" class="link_logout" >Logout</a></li>
+          <li> <a href="" class="d-inline-block" ><img src="images/icons/profile_icon.svg" alt="" width="32" /></a> </li>
+          <li> <a href="" class="d-inline-block" ><img src="images/icons/notify_icon.svg" alt="" width="32" /></a> </li>
+          <li class="pl-2">
+            <div class="dropdown language_items"> <a class="btn btn-secondary btn-sm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Language </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink"> <a class="dropdown-item active" href="">English</a> <a class="dropdown-item" href="">Español</a> <a class="dropdown-item " href="">Portugues</a> </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+          <div class="brand">
+            <div class=""> <a class="navbar-brand" href="#"><img src="images/logos/logo_aruba_and_APC.svg" alt="" width="400" class="img-fluid" /></a> </div>
+          </div>
+          <div class="ham text-right">
+            <button class="navbar-toggler custom-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+          </div>
+          <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"> <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> </li>
+              <li class="nav-item"> <a class="nav-link" href="#">APs</a> </li>
+              <li class="nav-item"> <a class="nav-link" href="#">Vouchers</a> </li>
+              <li class="nav-item"> <a class="nav-link" href="#">How to win</a> </li>
+              <li class="nav-item"> <a class="nav-link" href="#">Resources</a> </li>
+              <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Reports </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="#">Registratio Report</a> <a class="dropdown-item" href="#">Assets Report</a> </div>
+              </li>
+              <li class="nav-item"> <a class="nav-link" href="#">Community</a> </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="generic_content ">
+  <div class="banner_title_generic ap_background">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col text-white s40">
+          <div>My APs</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid pb-5">
+    <div id="valid_ap_msg" class="container-fluid py-3 py-sm-5">
+      <div class="row ">
+        <div class="col-12">
+          <div class="s30 mb-4">Registration AP's Resume</div>
+        </div>
+        <div class="col-12">
+          <div class="row">
+            <div class="col-sm-auto my-2 text-center text-sm-left">
+              <div class="fu_table mx-auto mr-md-4">
+                <div class="pr-2">Válido</div>
+                <div><img src="images/icons/valid_ap_icon.svg" width="22" alt=""></div>
+                <div id="datafill-valid" class="s18 pl-2">30</div>
+              </div>
+            </div>
+            <div class="col-sm-auto my-2 text-center text-sm-left">
+              <div class="fu_table mx-auto mr-md-4">
+                <div class="pr-2">Pendiente</div>
+                <div><img src="images/icons/pending_ap_icon.svg" width="22" alt=""></div>
+                <div id="datafill" class="s18 pl-2">1</div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="my-2"> Pending Serial Number:</div>
+              <div class="list-invalid">
+                <ul>
+                  <li>12345984</li>
+                  <li>12345984</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col py-3 text-center text-sm-right">
+          <button type="submit" class="btn btn-primary m-1">Corfirmar</button>
+          <button id="behind" type="button" class="btn m-1 btn-outline-grey">Edit </button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="title_generic">Access Points Registration</div>
+      </div>
+      <div class="col-12 mt-3 mb-4 ">
+        <div class=" mb-3 s18 semibold_txt">Instructions to register your Access Points: </div>
+        <div class="s16">Start by entering the date, place, invoice number and serial numbers of the purchase you have made. You can only enter an invoice number that matches the information entered. Please note that the document you upload must be in the following formats,  PDF, JPG or PNG with a max. 5 MB. </div>
+      </div>
+    </div>
+    <form class="needs-validation" novalidate>
+      <!-- colocar d-none para ocultar-->
+      <div class="row ap_register">
+        <div class="form-group required col-md-6">
+          <label>Purchase Date</label>
+          <input class="datepicker" required />
+        </div>
+        <div class="form-group required col-md-6">
+          <label for="">Place of Purchase (Authorized Dealer, Retailer, Seller) </label>
+          <input type="text" class="form-control" id="" required>
+          <div class="invalid-feedback"> Please enter a valid info </div>
+        </div>
+        <div class="form-group required col-md-6">
+          <label for="">INVOICE Number</label>
+          <span class="just-jp">
+          <select id="" class="selectpicker form-control"  data-live-search="true" data-dropup-auto="false" data-size="10" multiple required title="Please Select..." >
+            <option>name 1</option>
+            <option>name 2</option>
+            <option>ame 2</option>
+            <option>name 1</option>
+            <option>name 2</option>
+            <option>ame 2</option>
+            <option>name 1</option>
+            <option>name 2</option>
+            <option>ame 2</option>
+            <option>name 1</option>
+            <option>name 2</option>
+            <option>ame 2</option>
+            <option>name 1</option>
+            <option>name 2</option>
+            <option>ame 2</option>
+            <option>name 1</option>
+            <option>name 2</option>
+            <option>ame 2</option>
+            <option>name 1</option>
+            <option>name 2</option>
+            <option>ame 2</option>
+            <option>name 1</option>
+            <option>name 2</option>
+            <option>ame 2</option>
+            <option>name 1</option>
+            <option>name 2</option>
+            <option>ame 2</option>
+          </select>
+          </span> </div>
+        <div class="form-group required col-md-6">
+          <label for="">Invoice image <span class="s10 orange_txt">Choose file (Max 5Mb)</span></label>
+          <div class="input-group">
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" required>
+              <label class="custom-file-label" for="inputGroupFile04"></label>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mt-3 mb-4 ">
+          <div class="s16"> The serial number field has a limit of 10 serial numbers per entry. If for some reason you cannot find the serial number in the list, enter your serial number manually in the "Enter serial number" field, this information will be validated as new serial numbers are updated. </div>
+          <div class=" my-3 s15 regular_txt"><span class="semibold_txt">Note:</span> Any serial number that remains "pending" will be automatically removed from your list, after three months from the date it was loaded. </div>
+          <div class="orange_txt semibold_txt">Keep in mind new serial numbers are uploaded weekly! </div>
+        </div>
+        <div class="form-group required col-md-6 col-xl-12">
+          <label for="">serial Number (max 10) </label>
+          <input type="text" class="form-control" id="" required>
+        </div>
+        <div class="col-12">
+          <div class=" my-3">Serial number not found? Enter the serial number in the field below and it will be validated once it becomes available. Use commas (,) to separate the serial numbers and note that the new serial numbers are loaded weekly. </div>
+        </div>
+        <div class="form-group  col-md-6 col-xl-12">
+          <label for="">Digit Serial Number </label>
+          <input type="text" class="form-control" id="">
+        </div>
+        <div class="col py-3 text-center text-sm-right">
+          <button type="submit" class="btn m-1 btn-outline-grey">Cancel</button>
+          <button type="submit" class="btn btn-primary m-1">Submit</button>
+        </div>
+      </div>
+    </form>
+    <div class="container-fluid py-3 py-sm-5">
+      <div class="row ">
+        <div class="col-sm-auto my-2 text-center text-sm-left">
+          <div class="fu_table mx-auto mr-md-4">
+            <div class="pr-2">Valid</div>
+            <div><img src="images/icons/valid_ap_icon.svg" width="22" alt=""/></div>
+            <div class="s18 pl-2"> 10</div>
+          </div>
+        </div>
+        <div class="col-sm-auto my-2 text-center text-sm-left">
+          <div class="fu_table mx-auto mr-md-4">
+            <div class="pr-2">Pending</div>
+            <div><img src="images/icons/pending_ap_icon.svg" width="22" alt=""/></div>
+            <div class="s18 pl-2"> 4</div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="s20 my-2">Your Acces Point has been successfully registered</div>
+        </div>
+        <div class="col py-3 text-center text-sm-right">
+          <button type="submit" class="btn m-1 btn-outline-grey">Edit</button>
+          <button type="submit" class="btn btn-primary m-1">Confirm</button>
+        </div>
+      </div>
+    </div>
+    <div class="valid_ap_msg"> <!-- colocar d-none para ocultar-->
+      <div class="row">
+        <div class="col">
+          <div class="msg_ap">
+            <div class="s45m regular_txt">APs Registered</div>
+            <div class="s20 my-2">Your Acces Point has been successfully valided</div>
+          </div>
+          <div class="py-3 text-center text-sm-right">
+            <button type="submit" class="btn btn-primary m-1">Register another APs</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="invalid_ap_msg"> <!-- colocar d-none para ocultar-->
+      <div class="row">
+        <div class="col">
+          <div class="msg_ap">
+            <div class="s45m regular_txt">APs Registered</div>
+            <div class="s20 my-2">Your Access Point don´t been successfully registered</div>
+          </div>
+          <div class="py-3 text-center text-sm-right">
+            <button type="submit" class="btn btn-primary m-1">Register another APs</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pending_ap_msg"> <!-- colocar d-none para ocultar-->
+      <div class="row">
+        <div class="col">
+          <div class="msg_ap">
+            <div class="s45m regular_txt">APs Registered</div>
+            <div class="s20 my-2">Your Access Point don´t been successfully registered</div>
+          </div>
+          <div class="py-3 text-center text-sm-right">
+            <button type="submit" class="btn btn-primary m-1">Register another APs</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="win_invalid_ap_msg"> <!-- colocar d-none para ocultar-->
+      <div class="row">
+        <div class="col">
+          <div class="msg_ap">
+            <div class="s45m regular_txt text-uppercase">CONGRATULATIONS YOU WON A NEW VOUCHER!</div>
+            <div class="s20 my-2">Some serial numbers were invalid, please click on the “Review APs submitted” to check status
+              *Keep in mind that serial numbers are uploaded weekly! </div>
+            <a href="" class="link_orange">My Achieved Vouchers </a> </div>
+          <div class="py-3 text-center text-sm-right">
+            <button type="submit" class="btn btn-primary m-1">Register another APs</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="win_valid_ap_msg"> <!-- colocar d-none para ocultar-->
+      <div class="row">
+        <div class="col">
+          <div class="msg_ap">
+            <div class="s45m regular_txt text-uppercase">YOU WON A NEW VOUCHER</div>
+            <div class="s20 my-2">Your Access Point has been registered and you won a new Voucher. </div>
+            <a href="" class="link_orange">My Achieved Vouchers </a> </div>
+          <div class="py-3 text-center text-sm-right">
+            <button type="submit" class="btn btn-primary m-1">Register another APs</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg_light_gray">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col s24 py-3">My APs List</div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid py-4">
+    <div class="row align-items-center">
+      <div class="col-sm-auto my-2 text-center text-sm-left"> Total Apps (21) </div>
+      <div class="col-sm-auto my-2 text-center text-sm-left">
+        <div class="input-group search_box">
+          <input type="text" class="form-control">
+          <div class="input-group-append"> <span class="input-group-text"><img src="images/icons/search_icon.svg" width="15" alt=""/></span> </div>
+        </div>
+      </div>
+      <div class="col-sm-auto my-2 text-center text-sm-left">
+        <select class="selectpicker col-12 px-0 btn-filter" title="APs Filter" multiple>
+          <option>Valid</option>
+          <option>Invalid</option>
+          <option>Pending</option>
+        </select>
+      </div>
+      <div class="col-md my-2 text-center text-sm-right"> <a class="download_link excel" href="">Download excel</a> </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <div class="table-responsive">
+          <table class="table ap_list " width="100%" border="0" cellspacing="0" cellpadding="0">
+            <thead>
+              <tr>
+                <th width="26%">Invoice number</th>
+                <th width="19%">Submited Day</th>
+                <th width="25%">Serial number</th>
+                <th width="30%">APs Status <span class="light_txt">| Voucher</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#23454567</td>
+                <td>04/14/20</td>
+                <td colspan="2" class="p-0"><table class="table-striped" width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                      <tr class="valid">
+                        <td width="45.5%">#45567890</td>
+                        <td><span class="status">Valid</span></td>
+                      </tr>
+                      <tr class="reddemed">
+                        <td>#45567890</td>
+                        <td><span class="status">Redeemed</span> <span class="v_span">#127689</span></td>
+                      </tr>
+                      <tr class="reddemed">
+                        <td>#45567890</td>
+                        <td><span class="status">Redeemed</span> <span class="v_span">#127689</span></td>
+                      </tr>
+                    </tbody>
+                  </table></td>
+              </tr>
+              <tr>
+                <td>#23454567</td>
+                <td>04/14/20</td>
+                <td colspan="2" class="p-0"><table class="table-striped" width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                      <tr class="reddemed">
+                        <td width="45.5%">#45567890</td>
+                        <td><span class="status">Redeemed</span> <span class="v_span">#127689</span></td>
+                      </tr>
+                      <tr class="pending">
+                        <td>#45567890</td>
+                        <td><span class="status">Pending</span> <span class="v_span">#127689</span></td>
+                      </tr>
+                      <tr class="reddemed">
+                        <td>#45567890</td>
+                        <td><span class="status">Redeemed</span> <span class="v_span">#127689</span></td>
+                      </tr>
+                      <tr class="reddemed">
+                        <td>#45567890</td>
+                        <td><span class="status">Redeemed</span> <span class="v_span">#127689</span></td>
+                      </tr>
+                      <tr class="reddemed">
+                        <td>#45567890</td>
+                        <td><span class="status">Redeemed</span> <span class="v_span">#127689</span></td>
+                      </tr>
+                      <tr class="reddemed">
+                        <td>#45567890</td>
+                        <td><span class="status">Redeemed</span> <span class="v_span">#127689</span></td>
+                      </tr>
+                      <tr class="reddemed">
+                        <td>#45567890</td>
+                        <td><span class="status">Redeemed</span> <span class="v_span">#127689</span></td>
+                      </tr>
+                    </tbody>
+                  </table></td>
+              </tr>
+              <tr>
+                <td>#23454567</td>
+                <td>04/14/20</td>
+                <td colspan="2" class="p-0"><table class="table-striped" width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                      <tr class="reddemed">
+                        <td width="45.5%">#45567890</td>
+                        <td><span class="status">Redeemed</span> <span class="v_span">#127689</span></td>
+                      </tr>
+                      <tr class="reddemed">
+                        <td>#45567890</td>
+                        <td><span class="status">Redeemed</span> <span class="v_span">#127689</span></td>
+                      </tr>
+                      <tr class="reddemed">
+                        <td>#45567890</td>
+                        <td><span class="status">Redeemed</span> <span class="v_span">#127689</span></td>
+                      </tr>
+                      <tr class="reddemed">
+                        <td>#45567890</td>
+                        <td><span class="status">Redeemed</span> <span class="v_span">#127689</span></td>
+                      </tr>
+                      <tr class="reddemed">
+                        <td>#45567890</td>
+                        <td><span class="status">Redeemed</span> <span class="v_span">#127689</span></td>
+                      </tr>
+                      <tr class="reddemed">
+                        <td>#45567890</td>
+                        <td><span class="status">Redeemed</span> <span class="v_span">#127689</span></td>
+                      </tr>
+                      <tr class="reddemed">
+                        <td>#45567890</td>
+                        <td><span class="status">Redeemed</span> <span class="v_span">#127689</span></td>
+                      </tr>
+                    </tbody>
+                  </table></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="footer">
+  <div class="container-fluid">
+    <div class="row flex-row align-items-center">
+      <div class="text-center text-md-left py-2 col-md-5">
+        <ul class="list_footer">
+          <li><a href="">Privacy policy</a></li>
+          <li> <a href="">Terms of service</a></li>
+          <li><a href="">Legal</a></li>
+        </ul>
+      </div>
+      <div class="text-center py-2 col-sm-4 col-md-2"><img src="images/logos/aruba-logo-drk-txt.svg" width="160" alt="" class="img-fluid" /></div>
+      <div class="text-center text-sm-right py-2 col-md-5 col-sm-8">
+        <div class="s12 regular_txt black_txt">Copyright 2020 Hewlett Packard Enterprice Development LP</div>
+        <div class=" py-2"> <img src="images/logos/logo_optime.svg" width="150" alt=""/> </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="top_button">Top</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-3.4.1.min.js"></script> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.4.1.js"></script> 
+<script src="js/bootstrap-select.js"></script> 
+<script src="js/datepicker.js"></script> 
+<script src="js/actions.js"></script>
+</body>
+</html>

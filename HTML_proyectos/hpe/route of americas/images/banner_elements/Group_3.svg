@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1144.44" height="155" viewBox="0 0 1144.44 155">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f5b26d;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #ff4752;
+      }
+
+      .cls-3 {
+        fill: #ff992e;
+      }
+    </style>
+  </defs>
+  <path id="Shape_766_copy_2" data-name="Shape 766 copy 2" class="cls-1" d="M1239.43,151.839s-231.53-98.173-80-47c147.38,49.771,208.47-18.172,249-29s80-30,80-30,45.47,41.344,63,67-31,41-31,41Z" transform="translate(-1108 -45.844)"/>
+  <path class="cls-2" d="M2179.43,110.839l-8.67-2.619c-28.92-8.745-120.33-36.38-120.33-36.38l-74,47-123-15-166,31s96.59,53.717,112,54,296-3,296-3l102-9Z" transform="translate(-1108 -45.844)"/>
+  <path class="cls-3" d="M2202.43,150.84l-212-48-212,26-134-36-206,50-90,30,740,22,164,6Z" transform="translate(-1108 -45.844)"/>
+</svg>

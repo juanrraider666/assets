@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15.938" height="16.031" viewBox="0 0 15.938 16.031">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #bbcf16;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="yess.svg" class="cls-1" d="M820,967.978a8.009,8.009,0,1,0,7.977,8.009A7.993,7.993,0,0,0,820,967.978Zm-1.761,11.676-3.694-4.1,1.248-1.129,2.61,2.9,5.977-5,1.074,1.3Z" transform="translate(-812.031 -967.969)"/>
+</svg>

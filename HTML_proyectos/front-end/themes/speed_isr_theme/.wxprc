@@ -1,0 +1,7 @@
+show_hidden = "1"
+show_bytes = "1"
+show_qdir = "0"
+theme = "default"
+sort_order = "0"
+safe_delete = "0"
+charset = "us-ascii"

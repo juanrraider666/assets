@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'century_regular';
+    src: url('../fonts/gothicb-webfont.eotcss/fonts/gothic-webfont.eot');
+    src: url('../fonts/gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gothic-webfont.woff') format('woff'),
+         url('../fonts/gothic-webfont.ttf') format('truetype'),
+         url('../fonts/gothic-webfont.svg#century_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'century_regular';
+    src: url('../fonts/gothic-webfont.svg#century_regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+
+
+
+@font-face {
+    font-family: 'century_bold';
+    src: url('../fonts/gothicb-webfont.eot');
+    src: url('../fonts/gothicb-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gothicb-webfont.woff') format('woff'),
+         url('../fonts/gothicb-webfont.ttf') format('truetype'),
+         url('../fonts/gothicb-webfont.svg#century_gothicbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'century_bold';
+    src: url('../fonts/gothicb-webfont.svg#century_bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
