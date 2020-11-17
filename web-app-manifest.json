@@ -1,17 +1,12 @@
 
 {
-  "array": [
-    1,
-    2,
-    3
-  ],
-  "boolean": true,
-  "color": "gold",
-  "null": null,
-  "number": 123,
-  "object": {
-    "a": "b",
-    "c": "d"
-  },
-  "string": "Hello World"
+name: "project-juan",
+start_url: "https://www.juandeveloper.com/",
+display: "minimal-ui",
+dir: "ltr",
+short_name: "Juan",
+lang: "en-US",
+background_color: "#fff",
+theme_color: "#fff",
+description: "Manifest para pruectos creados por juan pablo Diaz."
 }
