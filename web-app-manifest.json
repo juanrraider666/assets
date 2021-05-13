@@ -1,0 +1,12 @@
+
+{
+name: "project-juan",
+start_url: "https://www.juandeveloper.com/",
+display: "minimal-ui",
+dir: "ltr",
+short_name: "Juan",
+lang: "en-US",
+background_color: "#fff",
+theme_color: "#fff",
+description: "Manifest para pruectos creados por juan pablo Diaz."
+}
