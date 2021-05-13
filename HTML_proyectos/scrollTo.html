@@ -1,0 +1,58 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+
+<script
+			  src="https://code.jquery.com/jquery-1.12.4.js"
+			  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+			  crossorigin="anonymous"></script>
+
+
+	<style>
+	div {
+    width: 100px;
+    height: 70px;
+    border: 1px solid blue;
+    overflow: auto;
+}
+
+		.active{background: red}
+	</style>
+
+
+</head>
+
+<body>
+
+	<div>
+
+    <table id="my_table">
+        <tr ><td>1</td></tr>
+        <tr ><td>2</td></tr>
+        <tr ><td>3</td></tr>
+        <tr ><td>4</td></tr>
+        <tr ><td>5</td></tr>
+        <tr ><td>6</td></tr>
+        <tr ><td>7</td></tr>
+        <tr  ><td>8</td></tr>
+        <tr class="active" ><td>9</td></tr>
+    </table>
+        </div>
+
+
+
+<script>
+
+var container = $('div'),
+    scrollTo = $('.active');
+
+container.animate({
+    scrollTop: scrollTo.offset().top - container.offset().top + container.scrollTop() - (container.height()/2)
+}, 2000);
+
+</script>
+
+
+</body>
+</html>

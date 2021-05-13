@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e96cef3-ef2f-4cd3-904e-74e52a71e7ee" name="Default Changelist" comment="" />
+    <list default="true" id="3e96cef3-ef2f-4cd3-904e-74e52a71e7ee" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nueva carpeta/AdobeStock_126502788_Preview.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nueva carpeta/AdobeStock_171976495_Preview.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nueva carpeta/AdobeStock_191424026_Preview.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nueva carpeta/AdobeStock_191424207_Preview.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nueva carpeta/AdobeStock_191424336_Preview.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nueva carpeta/AdobeStock_191424585_Preview.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nueva carpeta/AdobeStock_191424818_Preview.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nueva carpeta/AdobeStock_191425070_Preview.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nueva carpeta/AdobeStock_191425189_Preview.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nueva carpeta/AdobeStock_198350893_Preview.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nueva carpeta/AdobeStock_202072960_Preview.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nueva carpeta/AdobeStock_206195118_Preview.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nueva carpeta/AdobeStock_39517094_Preview.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nueva carpeta/AdobeStock_51176583_Preview.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nueva carpeta/AdobeStock_59458575_Preview.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nueva carpeta/AdobeStock_84935395_Preview.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nueva carpeta/AdobeStock_84987516_Preview.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nueva carpeta/AdobeStock_89091508_Preview.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nueva carpeta/AdobeStock_89354393_Preview.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nueva carpeta/AdobeStock_97276025_Preview.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/optime/mug/mug.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/optime/mug/mug_all.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/optime/mug/mug_all_curvas.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/optime/mug/mug_curvas.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/optime/mug/mug_solo.ai" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +71,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604582720758</updated>
-      <workItem from="1604582722778" duration="3831000" />
+      <workItem from="1604582722778" duration="7712000" />
+      <workItem from="1606092494970" duration="937000" />
+      <workItem from="1606141489991" duration="527000" />
+      <workItem from="1606353008395" duration="4269000" />
+      <workItem from="1606401784227" duration="568000" />
+      <workItem from="1606405132169" duration="650000" />
+      <workItem from="1606409148356" duration="1941000" />
     </task>
     <servers />
   </component>
@@ -52,13 +85,17 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2588" y="257" width="763" height="526" key="find.popup" timestamp="1604588035247">
+    <state x="2609" y="315" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606356155591">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2588" y="257" width="763" height="526" key="find.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604588035247" />
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1604587076315">
+    <state x="2609" y="315" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606356155591" />
+    <state x="2588" y="257" width="763" height="526" key="find.popup" timestamp="1606407329465">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604587076315" />
+    <state x="2588" y="257" width="763" height="526" key="find.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606407329465" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606409240172">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606409240172" />
   </component>
 </project>
